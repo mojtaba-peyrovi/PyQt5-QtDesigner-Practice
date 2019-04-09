@@ -25,6 +25,55 @@ And we save it in the same folder as the ui file is. Now when we load test.py fi
 
 #### Currency converter app:
 
-Now we make a new ui using a button and two "Line Edit" widgets.
+Now we make a new ui using a button and two "Line Edit" widgets. 
+
+The first Line Edit for EURO as input, and another for USD as output. 
+
+Then we will have to write the python app for it. we call it converter.py. 
+
+__NOTE:__ Anytime we want to reference any object in the ui, we need to uave dgl. behind it. and dlg is coming from here:
+
+```
+dlg = uic.loadUi("ui_file_name")
+```
+
+__setText():__ prints the value of a textbox to whatever we write inside brackets.
+
+__setPlaceholderText():__ It sets placeholder for the input field.
+
+In order to connect an action or function to a button-click event:
+
+```
+dlg.btn_name.clicked.connect(function_name)
+```
+__setFocus():__ we can set the focus on any object we need.
+
+__returnPressed():__ we can trigger a function, once we press enter on an object.
+```
+dlg.object_name.returnPressed.connect(function_name)
+```
+__setReadOnly(True):__ Anytime we want to make a field read-only we can use this.
+```
+dlg.object_name.setReadOnly(True)
+```
+__addItem():__ It is used for list widgets and adds items to the list.
+
+__QMessageBox:__ It is a library inside QtWidgets that shows message boxes:
+```
+QtMessageBox.information(None,"title","message")
+```
+ 
+__Note:__ Anytime we want some functions run as soon as the app runs we say:
+
+```
+def main():
+    <write the code here>
+if __name__ == "__main__":
+    main()
+```
+
+We can make the application read/write from/into json file. the code is located in an app folder called "shopping-list-with-json-app"
+
+
 
 
