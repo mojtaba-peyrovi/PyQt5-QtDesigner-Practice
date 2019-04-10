@@ -74,6 +74,19 @@ if __name__ == "__main__":
 
 We can make the application read/write from/into json file. the code is located in an app folder called "shopping-list-with-json-app"
 
+#### Connecting SQlite to the app:
 
+
+The code can be seem in the file sqlite.py. And we imported sqlite3, and made the class and construct, and instantiated a test database as test.db.
+
+Now we see that when we run the py file, the database will be created in the same folder.
+
+Next thing,we made a function in the py file, that runs a sql code and creates a table called users.
+
+We made all update, insert, and select data into the table inside sqlite.py. 
+
+#### Connect SQLite functionality to table widget in PyQt table widget:
+
+__Select functionality:__ The code has been saved at sqlite-connected-select.
 
 
