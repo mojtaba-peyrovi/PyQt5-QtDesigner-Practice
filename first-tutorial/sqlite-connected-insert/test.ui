@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>750</width>
-    <height>405</height>
+    <width>1038</width>
+    <height>681</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QTableWidget" name="test_table">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>10</y>
+      <x>500</x>
+      <y>30</y>
       <width>521</width>
-      <height>351</height>
+      <height>621</height>
      </rect>
     </property>
     <column>
@@ -44,17 +44,50 @@
      </property>
     </column>
    </widget>
-   <widget class="QPushButton" name="load_btn">
+   <widget class="QPushButton" name="insert_btn">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>10</y>
+      <x>370</x>
+      <y>610</y>
       <width>93</width>
       <height>28</height>
      </rect>
     </property>
     <property name="text">
-     <string>Load Data</string>
+     <string>Insert Data</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_name">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_year">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_admin">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Admin</string>
     </property>
    </widget>
   </widget>

@@ -90,3 +90,24 @@ We made all update, insert, and select data into the table inside sqlite.py.
 __Select functionality:__ The code has been saved at sqlite-connected-select.
 
 
+#### Inserting data into the table:
+
+We already made an app that by pushing a button, we load data into a table.
+
+Now we want to make an app that inserts data into the table by the UI.
+
+First, we get rid of the line of code associated with button click. Instead of that, we write a piece that says anytime the ui opens load data:
+```
+loadData()
+```
+
+We change the button functionality, from load data to insert data.
+
+After adding the user by the function called add_user, then data won't be shown immediately in the table. we need to refresh it once. For doing this we made another function called clear_data() that does the refreshing.
+
+__NOTE:__ In order to remove spaces from a string:
+```
+<string_name>.strip(" ")
+```
+
+
